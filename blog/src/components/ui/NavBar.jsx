@@ -6,23 +6,36 @@ import {
   Button,
 } from "@nextui-org/react";
 
+import logo from "../../assets/myLogo2.png";
+
 const NavBar = () => {
   return (
-    <Navbar shouldHideOnScroll>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+    <Navbar shouldHideOnScroll height={60}>
+      <NavbarContent justify="start" className="gap-2">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <img src={logo} style={{ height: "60px", width: "auto" }} />
+        </NavbarItem>
+        <NavbarItem className="text-3xl">WeiQaQ</NavbarItem>
+      </NavbarContent>
+      <NavbarContent className="hidden sm:flex gap-10" justify="center">
+        <NavbarItem>
+          <Link href="#" className="text-2xl">
             Features
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+        <NavbarItem>
+          <Link href="#" className="text-2xl">
+            My Project
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link href="#" className="text-2xl">
+            Game
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="#" className="text-2xl">
+            Book
           </Link>
         </NavbarItem>
       </NavbarContent>

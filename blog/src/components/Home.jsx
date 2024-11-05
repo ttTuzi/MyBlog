@@ -1,10 +1,11 @@
-import React from "react";
-import TypingAnimation from "./ui/typing-animation";
+import Grid from "./Grid";
+import NameCard from "./NameCard";
 
 const Home = () => {
   return (
     <div>
-      <TypingAnimation text="Hello my name is Wei!!!" />
+      <NameCard />
+      <Grid />
     </div>
   );
 };

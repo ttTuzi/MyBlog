@@ -6,13 +6,15 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <NextUIProvider>
+    <div className="relative flex flex-col min-h-screen">
+      {/* Background grid pattern with fixed positioning */}
+      <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
         <GridPattern />
-        <main className="flex-grow light text-foreground bg-background">
-          <NavBar />
-        </main>
-        <div className="overflow-auto">
+      </div>
+
+      <NextUIProvider>
+        <NavBar />
+        <div className="flex-grow">
           <main className="mx-auto max-w-3xl">
             <Outlet />
           </main>
