@@ -7,7 +7,7 @@ import TypingAnimation from "./ui/typing-animation";
 
 const NameCard = () => {
   return (
-    <div className="relative flex h-[120vh] flex-col justify-center gap-18">
+    <div className="relative flex h-[120vh] flex-col justify-center gap-18 -mt-20 overflow-hidden">
       {/* Inner Circles */}
       <OrbitingCircles
         className=" border-none bg-transparent "

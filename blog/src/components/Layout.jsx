@@ -15,7 +15,7 @@ const Layout = () => {
       <NextUIProvider>
         <NavBar />
         <div className="flex-grow">
-          <main className="mx-auto max-w-3xl">
+          <main className="mx-auto w-full ">
             <Outlet />
           </main>
         </div>
