@@ -13,14 +13,18 @@ const NavBar = () => {
     <Navbar shouldHideOnScroll height={60}>
       <NavbarContent justify="start" className="gap-2">
         <NavbarItem>
-          <img src={logo} style={{ height: "60px", width: "auto" }} />
+          <Link href="/">
+            <img src={logo} style={{ height: "60px", width: "auto" }} />
+          </Link>
         </NavbarItem>
-        <NavbarItem className="text-3xl">WeiQaQ</NavbarItem>
+        <Link href="/">
+          <NavbarItem className="text-3xl">WeiQaQ</NavbarItem>
+        </Link>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link href="#" className="text-2xl">
-            Features
+          <Link href="about" className="text-2xl">
+            About Me
           </Link>
         </NavbarItem>
         <NavbarItem>

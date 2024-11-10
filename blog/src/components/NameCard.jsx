@@ -6,6 +6,9 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import TypingAnimation from "./ui/typing-animation";
 
 const NameCard = () => {
+  const intro =
+    "Welcome to my corner of the web! I'm Wei, a CS major at UGA and a full stack engineer.";
+
   return (
     <div className="relative flex h-[120vh] flex-col justify-center gap-18 -mt-20 overflow-hidden">
       {/* Inner Circles */}
@@ -50,11 +53,11 @@ const NameCard = () => {
           >
             <TypingAnimation
               className="font-display text-lg font-bold leading-[2rem] tracking-[-0.02em] drop-shadow-sm"
-              text="Welcome to my secret spot on the internet. I'm Wei Liang, a computer science major at the University of Georgia (UGA). I will share my story here"
+              text={intro}
               duration={20}
             />
           </CardItem>
-          <CardItem>
+          <CardItem className="mt-5">
             <ul className="space-y-2 text-neutral-500 dark:text-neutral-300 text-lg">
               <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
                 Influencer (&gt;286K followers)
