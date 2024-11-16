@@ -60,7 +60,7 @@ const NameCard = () => {
           <CardItem className="mt-5">
             <ul className="space-y-2 text-neutral-500 dark:text-neutral-300 text-lg">
               <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
-                Influencer (&gt;286K followers)
+                <a href="#Skills">Skill Sets</a>
               </li>
               <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
                 Chromium Developer

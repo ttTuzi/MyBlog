@@ -5,8 +5,11 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
+import { motion } from "framer-motion";
 
-import logo from "../../assets/myLogo2.png";
+import logo from "../assets/myLogo2.png";
+import linkedinLogo from "../assets/linkedinLogo.png";
+import githubLogo from "../assets/githubLogo.png";
 
 const NavBar = () => {
   return (
@@ -43,14 +46,37 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
       </NavbarContent>
+
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+        <NavbarItem>
+          <motion.a
+            href="https://github.com/ttTuzi"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            style={{ display: "inline-block" }} // ensures scaling affects only the image and link
+          >
+            <img
+              src={githubLogo}
+              alt="LinkedIn Profile"
+              style={{ height: "30px", width: "auto" }}
+            />
+          </motion.a>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <motion.a
+            href="https://www.linkedin.com/in/wei-liang-296413258/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            style={{ display: "inline-block" }} // ensures scaling affects only the image and link
+          >
+            <img
+              src={linkedinLogo}
+              alt="LinkedIn Profile"
+              style={{ height: "30px", width: "auto" }}
+            />
+          </motion.a>
         </NavbarItem>
       </NavbarContent>
     </Navbar>

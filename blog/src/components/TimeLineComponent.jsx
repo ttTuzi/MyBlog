@@ -4,11 +4,12 @@ import { Image } from "@nextui-org/react";
 export function TimelineComponent() {
   const data = [
     {
-      title: "2024",
+      title: "December 2024",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <p className="text-neutral-600 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Expecting to graduate with a Bachelor of Science in Computer Science
+            from the University of Georgia.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -44,17 +45,40 @@ export function TimelineComponent() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "January 2024 - May 2024",
+      content: (
+        <div>
+          <p className="text-neutral-600 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Undergraduate Teaching Assistant, assisting in creating and grading
+            assignments, quizzes, and exams, holding weekly office hours, and
+            providing tutoring to students.
+          </p>
+          {/* Insert images if available */}
+        </div>
+      ),
+    },
+    {
+      title: "November 2023 - December 2023",
+      content: (
+        <div>
+          <p className="text-neutral-600 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Led the migration of an online order system from a monolithic Spring
+            Boot application to a microservices architecture using Spring Cloud
+            and OpenFeign, enhancing system resilience and performance.
+          </p>
+          {/* Insert images if available */}
+        </div>
+      ),
+    },
+    {
+      title: "June 2023 - May 2024",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            Worked as a server at Sakura Japanese Sushi & Steak House to support
+            daily expenses and rent.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
+
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -88,6 +112,45 @@ export function TimelineComponent() {
         </div>
       ),
     },
+    {
+      title: "February 2023 - May 2023",
+      content: (
+        <div>
+          <p className="text-neutral-600 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Developed a web application with user and manager interfaces for an
+            online cinema platform, leading backend development with Spring Boot
+            and MySQL, and implementing robust APIs.
+          </p>
+          {/* Insert images if available */}
+        </div>
+      ),
+    },
+    {
+      title: "May - August 2021 & May - August 2022",
+      content: (
+        <div>
+          <p className="text-neutral-600 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Managed daily operations at MeAkan Japanese Sushi & Steakhouse,
+            leading a service team, scheduling staff, and coordinating inventory
+            to ensure smooth operations.
+          </p>
+          {/* Insert images if available */}
+        </div>
+      ),
+    },
+    {
+      title: "August 2020 - May 2022",
+      content: (
+        <div>
+          <p className="text-neutral-600 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Attended Georgia State University before transferring to the
+            University of Georgia to pursue a degree in Computer Science.
+          </p>
+          {/* Insert images if available */}
+        </div>
+      ),
+    },
+
     {
       title: "Changelog",
       content: (

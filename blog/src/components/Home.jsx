@@ -1,13 +1,13 @@
 import Grid from "./Grid";
 import NameCard from "./NameCard";
-import { SkillComponent } from "./SkillComponment";
+import RecentProjectComponents from "./RecentProjectComponents";
 
 const Home = () => {
   return (
     <div>
       <NameCard />
       <Grid />
-      <SkillComponent />
+      <RecentProjectComponents />
     </div>
   );
 };

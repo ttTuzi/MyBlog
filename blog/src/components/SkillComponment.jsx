@@ -1,5 +1,4 @@
 import { LayoutGrid } from "./ui/layout-grid";
-import githubIcon from "../assets/github.png";
 
 export function SkillComponent() {
   return (
