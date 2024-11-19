@@ -16,7 +16,7 @@ const NavBar = () => {
     <Navbar shouldHideOnScroll height={60}>
       <NavbarContent justify="start" className="gap-2">
         <NavbarItem>
-          <Link href="/">
+          <Link href="/MyBlog">
             <img src={logo} style={{ height: "60px", width: "auto" }} />
           </Link>
         </NavbarItem>
