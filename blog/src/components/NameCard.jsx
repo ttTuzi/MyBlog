@@ -63,9 +63,9 @@ const NameCard = () => {
                 <a href="#Skills">Skill Sets</a>
               </li>
               <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
-                Chromium Developer
+                <a href="#Projects">Projects</a>
               </li>
-              <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+              {/* <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
                 Web Developer
               </li>
               <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
@@ -73,7 +73,7 @@ const NameCard = () => {
               </li>
               <li className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
                 Game Critic
-              </li>
+              </li> */}
             </ul>
           </CardItem>
         </CardBody>

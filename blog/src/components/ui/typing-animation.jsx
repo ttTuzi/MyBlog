@@ -39,7 +39,7 @@ export default function TypingAnimation({ text, duration = 200, className }) {
       {showLink && (
         <Link
           to="/about"
-          className="font-display font-display text-lg font-bold leading-[2rem] tracking-[-0.02em] drop-shadow-sm hover:text-orange-500 transition-colors duration-300"
+          className="font-display font-display text-lg font-bold leading-[2rem] tracking-[-0.02em] drop-shadow-sm text-orange-500 transition-colors duration-300"
         >
           More...
         </Link>
