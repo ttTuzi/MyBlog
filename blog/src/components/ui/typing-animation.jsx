@@ -38,7 +38,7 @@ export default function TypingAnimation({ text, duration = 200, className }) {
       </h1>
       {showLink && (
         <Link
-          to="/about"
+          to="/MyBlog/about"
           className="font-display font-display text-lg font-bold leading-[2rem] tracking-[-0.02em] drop-shadow-sm text-orange-500 transition-colors duration-300"
         >
           More...
