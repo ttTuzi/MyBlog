@@ -20,7 +20,7 @@ const NavBar = () => {
             <img src={logo} style={{ height: "60px", width: "auto" }} />
           </Link>
         </NavbarItem>
-        <Link href="/">
+        <Link href="/MyBlog">
           <NavbarItem className="text-3xl">WeiQaQ</NavbarItem>
         </Link>
       </NavbarContent>
