@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import project1Img from "../assets/project1.png";
 import SketchButton from "./SketchButton";
+import project1Img from "../assets/project1.png";
 import jsLogo from "../assets/jsLogo.svg";
 import javaLogo from "../assets/javaLogo.svg";
 import springbootLogo from "../assets/springbootLogo.svg";

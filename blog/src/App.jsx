@@ -1,10 +1,16 @@
+import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import Error from "./components/ui/Error";
-import Home from "./components/Home";
-import Project1 from "./projects/project1/Project1";
-import AboutMeComponent from "./components/AboutMeComponent";
 
+// Lazy-loaded components
+const Home = React.lazy(() => import("./components/Home"));
+const Project1 = React.lazy(() => import("./projects/project1/Project1"));
+const AboutMeComponent = React.lazy(() =>
+  import("./components/AboutMeComponent")
+);
+
+// Router configuration with lazy-loaded routes
 const router = createBrowserRouter([
   {
     element: <Layout />, // Common layout for all child routes
@@ -12,17 +18,29 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/MyBlog",
-        element: <Home />,
+        element: (
+          <Suspense fallback={<div>Loading Home...</div>}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: "/MyBlog/about",
-        element: <AboutMeComponent />,
+        element: (
+          <Suspense fallback={<div>Loading About Me...</div>}>
+            <AboutMeComponent />
+          </Suspense>
+        ),
       },
     ],
   },
   {
     path: "/MyBlog/projects/project1",
-    element: <Project1 />,
+    element: (
+      <Suspense fallback={<div>Loading Project 1...</div>}>
+        <Project1 />
+      </Suspense>
+    ),
   },
 ]);
 

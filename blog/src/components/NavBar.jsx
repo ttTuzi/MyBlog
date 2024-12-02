@@ -26,7 +26,7 @@ const NavBar = () => {
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link href="about" className="text-2xl">
+          <Link href="/MyBlog/about" className="text-2xl">
             About Me
           </Link>
         </NavbarItem>
