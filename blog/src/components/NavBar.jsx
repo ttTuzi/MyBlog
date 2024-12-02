@@ -1,11 +1,6 @@
-import {
-  Navbar,
-  NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
+import { Navbar, NavbarContent, NavbarItem, Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/myLogo2.png";
 import linkedinLogo from "../assets/linkedinLogo.png";
