@@ -3,6 +3,47 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  /* Prevent text size adjustment on orientation change */
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Improve text rendering */
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Better touch targets */
+  button,
+  a {
+    @apply touch-manipulation;
+  }
+
+  /* Prevent pull-to-refresh on mobile */
+  @media (hover: none) {
+    body {
+      overscroll-behavior-y: contain;
+    }
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -63,17 +104,60 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .page-container {
+    @apply min-h-screen flex flex-col;
+  }
+
+  .content-container {
+    @apply flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Responsive typography */
+  .heading-1 {
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold;
+  }
+
+  .heading-2 {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold;
+  }
+
+  .heading-3 {
+    @apply text-xl sm:text-2xl md:text-3xl font-bold;
+  }
+
+  .body-text {
+    @apply text-base sm:text-lg;
+  }
+
+  .small-text {
+    @apply text-sm sm:text-base;
+  }
+
+  /* Responsive spacing utilities */
+  .section-padding {
+    @apply py-8 sm:py-12 md:py-16 lg:py-20;
+  }
+
+  .section-margin {
+    @apply my-8 sm:my-12 md:my-16 lg:my-20;
   }
 }
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
+/* Custom scrollbar */
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
